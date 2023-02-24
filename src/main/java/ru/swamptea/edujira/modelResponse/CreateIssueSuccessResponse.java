@@ -7,13 +7,15 @@ public class CreateIssueSuccessResponse extends CreateIssueResponse {
 
     String id;
     String key;
+    String self;
 
     public CreateIssueSuccessResponse() {
     }
 
-    public CreateIssueSuccessResponse(String id, String key) {
+    public CreateIssueSuccessResponse(String id, String key, String self) {
         this.id = id;
         this.key = key;
+        this.self = self;
     }
 
     public String getId() {
@@ -30,5 +32,13 @@ public class CreateIssueSuccessResponse extends CreateIssueResponse {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+    public String getSelf() {
+        return self;
+    }
+
+    public void setSelf(String self) {
+        this.self = self;
     }
 }
